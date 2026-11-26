@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NationStat — National Statistics Explorer</title>
+<meta name="description" content="NationStat compares headline statistics for 17 of the world's largest countries: population, GDP, life expectancy and more, from World Bank WDI 2023.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#/"><span class="brand-mark">N</span> NationStat</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#/" data-page="dashboard">Dashboard</a>
+      <a href="#/rankings" data-page="rankings">Rankings</a>
+      <a href="#/about" data-page="about">About</a>
+    </nav>
+  </div>
+</header>
+<main id="view" class="page"></main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p><strong>NationStat</strong> — an independent national statistics explorer. Figures: World Bank World Development Indicators, 2023; median age: UN World Population Prospects 2024. Figures rounded. Not affiliated with the World Bank or the United Nations.</p>
+    <p>Built for the make.fun bounty &ldquo;Make the best national statistics site&rdquo;. Works offline from its own files.</p>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="views.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
